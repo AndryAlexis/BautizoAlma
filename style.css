@@ -55,7 +55,7 @@ body {
 }
 
 #container .top img {
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -79,8 +79,17 @@ body {
     text-align: center;
     margin: 20px 0 20px 0;
 
-    font-size: 1.9em;
+    font-size: 1.5em;
     color: var(--color-card);
+}
+
+#roses {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/64/2f/0b/642f0bf1c6e0000e197f23d8923b8541.png);
 }
 
 #location-text {
@@ -106,7 +115,7 @@ body {
     }
 
     #name {
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
 }
 
