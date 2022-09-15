@@ -101,6 +101,10 @@ body {
         font-size: 1.5rem;
     }
 
+    #particles-js {
+        height: 100%;
+    }
+
     #name {
         font-size: 1.6em;
     }
