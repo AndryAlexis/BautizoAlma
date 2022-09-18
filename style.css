@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,500&display=swap');
 
 * {
@@ -58,6 +58,9 @@ body {
     margin-top: 20px;
     border-radius: 50%;
     z-index: 1;
+
+    max-width: 500px;
+    max-height: 500px;
 }
 
 #container .bottom section {
@@ -75,7 +78,7 @@ body {
 }
 
 #name {
-    font-family: 'Ballet', cursive;
+    font-family: 'Ms Madi', cursive;
     text-align: center;
     margin: 20px 0 20px 0;
 
