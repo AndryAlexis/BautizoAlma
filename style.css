@@ -119,15 +119,17 @@ body {
 } */
 
 input#confirmation:checked ~ #popup {
-    visibility: visible
+    visibility: visible;
+    display: flex;
 }
 
 input#confirmation:not(:checked) ~ #popup {
     visibility: hidden;
+    display: none;
 }
 
 #popup {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -163,7 +165,7 @@ input#confirmation:not(:checked) ~ #popup {
     align-items: center;
 
     width: inherit;
-    height: inherit;
+    min-height: inherit;
 
     min-height: inherit;
 
