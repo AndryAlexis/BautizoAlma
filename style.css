@@ -138,8 +138,8 @@ input#confirmation:not(:checked) ~ #popup {
     top: 0;
     left: 0;
 
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    min-height: 100vh;
 
     background-color: rgba(0, 0, 0, 0.244);
 }
@@ -148,17 +148,44 @@ input#confirmation:not(:checked) ~ #popup {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: inherit;
 
-    /* padding: 50px 0; */
+    width: 100%;
+
+    padding: 50px;
+
+    min-height: inherit;
 }
 
-#popup > div > div {
+#popup #content-popup {
     width: inherit;
     height: inherit;
 
-    padding: 20px;
+    min-height: inherit;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#content-popup label {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+    
+    background-color: rgb(243, 253, 244);
+    width: 100%;
+    height: 100%;
+}
+
+#content-popup svg {
+    width: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#content-popup iframe {
+    width: 100%;
+    height: 100vh;
 }
 
 
