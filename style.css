@@ -162,7 +162,11 @@ input#confirmation:not(:checked) ~ #popup {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+    #container {
+        justify-content: space-evenly;
+    }
+
     #container .top img {
         width: 70vw;
     }
