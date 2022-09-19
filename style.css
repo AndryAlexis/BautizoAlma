@@ -16,12 +16,15 @@ body {
     background-color: var(--background-color-card);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    /* height: 100vw; */
 }
 
 #particles-js {
     position: absolute;
     width: 100%;
+    height: 100vh;
     border: 0;
     padding: 0;
     margin: 0;
@@ -34,12 +37,12 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
-  }
+}
 
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     width: 100%;
@@ -95,7 +98,7 @@ body {
     background-image: url(https://i.pinimg.com/originals/64/2f/0b/642f0bf1c6e0000e197f23d8923b8541.png);
 }
 
-#location-text {
+#location-text, #confirm-text {
     text-align: center;
     font-size: 0.7em;
     line-height: 1.3;
@@ -103,6 +106,61 @@ body {
     color: var(--color-card);
     font-family: 'Josefin Slab', serif;
 }
+
+#confirm-text {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* iframe {
+    width: 100%;
+    height: 600px;
+} */
+
+input#confirmation:checked ~ #popup {
+    visibility: visible
+}
+
+input#confirmation:not(:checked) ~ #popup {
+    visibility: hidden;
+}
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.244);
+}
+
+#popup > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+
+    /* padding: 50px 0; */
+}
+
+#popup > div > div {
+    width: inherit;
+    height: inherit;
+
+    padding: 20px;
+}
+
 
 @media (max-width: 700px) {
     #container .top img {
